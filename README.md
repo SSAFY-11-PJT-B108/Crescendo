@@ -1,6 +1,7 @@
 # 팬 참여형 아이돌 커뮤니티
 
 ## 시작하기
+
 ```
 git clone [URL]
 npm install
@@ -8,8 +9,8 @@ cd Crescendo
 npm start
 ```
 
-
 ## 코딩 컨벤션
+
 **[태그] 제목의 형태**
 
 | 태그 이름 |                       설명                        |
