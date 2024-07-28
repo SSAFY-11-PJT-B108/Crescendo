@@ -13,9 +13,8 @@ export default function Header() {
     if (menuElement) {
       const activeLink = menuElement.querySelector('.active') as HTMLElement;
       if (activeLink) {
-       
         const { offsetLeft, offsetWidth } = activeLink;
-         console.log(offsetLeft + " " + offsetWidth);
+        console.log(offsetLeft + ' ' + offsetWidth);
         setIndicatorStyle({
           left: offsetLeft + (offsetWidth - 80) / 2 + 'px', // Center the indicator
         });
@@ -31,16 +30,16 @@ export default function Header() {
 
       <ul className="header_menu" ref={menuRef}>
         <li>
-          <NavLink to="/" >커뮤니티</NavLink>
+          <NavLink to="/">커뮤니티</NavLink>
         </li>
         <li>
-          <NavLink to="/dance" >댄스챌린지</NavLink>
+          <NavLink to="/dance">댄스챌린지</NavLink>
         </li>
         <li>
-          <NavLink to="/favorite" >전국최애자랑</NavLink>
+          <NavLink to="/favorite">전국최애자랑</NavLink>
         </li>
         <li>
-          <NavLink to="/game" >오락실</NavLink>
+          <NavLink to="/game">오락실</NavLink>
         </li>
         <div className="indicator" style={indicatorStyle}></div>
       </ul>
