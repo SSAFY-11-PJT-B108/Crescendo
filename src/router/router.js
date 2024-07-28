@@ -13,12 +13,16 @@ export const router = createBrowserRouter([
         element: <Main />,
       },
       {
-        path: '/chat',
-        element: <Chat />,
+        path: '/favorite',
+        element: <Main />,
       },
       {
-        path: '/join',
-        element: <Join />,
+        path: '/dance',
+        element: <Main />,
+      },
+      {
+        path: '/game',
+        element: <Main />,
       },
     ],
   },
