@@ -47,7 +47,7 @@ export default function LoginHeader() {
 
       <div className="header_icon">
         <Link to="/">
-          <Chat/>
+          <Chat />
         </Link>
         <Link to="/">
           <Alarm />
