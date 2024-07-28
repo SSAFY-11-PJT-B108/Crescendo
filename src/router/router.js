@@ -10,6 +10,18 @@ export const router = createBrowserRouter([
         path: '/',
         element: <Main />,
       },
+      {
+        path: '/favorite',
+        element: <Main />,
+      },
+      {
+        path: '/dance',
+        element: <Main />,
+      },
+      {
+        path: '/game',
+        element: <Main />,
+      },
     ],
   },
 ]);

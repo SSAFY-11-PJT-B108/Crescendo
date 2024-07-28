@@ -1,36 +1,57 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ReactComponent as Login } from '../../assets/images/login.svg';
 import { ReactComponent as UserList } from '../../assets/images/userlist.svg';
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+
 export default function Header() {
+  const [indicatorStyle, setIndicatorStyle] = useState<React.CSSProperties>({});
+  const menuRef = useRef<HTMLUListElement>(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    const menuElement = menuRef.current;
+    if (menuElement) {
+      const activeLink = menuElement.querySelector('.active') as HTMLElement;
+      if (activeLink) {
+       
+        const { offsetLeft, offsetWidth } = activeLink;
+         console.log(offsetLeft + " " + offsetWidth);
+        setIndicatorStyle({
+          left: offsetLeft + (offsetWidth - 80) / 2 + 'px', // Center the indicator
+        });
+      }
+    }
+  }, [location]);
+
   return (
     <div className="header">
       <Link to="/">
         <div className="header_title">CRESCENDO</div>
       </Link>
 
-      <ul className="header_menu">
+      <ul className="header_menu" ref={menuRef}>
         <li>
-          <Link to="/">커뮤니티</Link>
+          <NavLink to="/" >커뮤니티</NavLink>
         </li>
         <li>
-          <Link to="/">댄스챌린지</Link>
+          <NavLink to="/dance" >댄스챌린지</NavLink>
         </li>
         <li>
-          <Link to="/">전국최애자랑</Link>
+          <NavLink to="/favorite" >전국최애자랑</NavLink>
         </li>
         <li>
-          <Link to="/">오락실</Link>
+          <NavLink to="/game" >오락실</NavLink>
         </li>
+        <div className="indicator" style={indicatorStyle}></div>
       </ul>
 
       <div className="header_icon">
-        <Link to="/">
+        <NavLink to="/">
           <Login />
-        </Link>
-        <Link to="/">
+        </NavLink>
+        <NavLink to="/">
           <UserList />
-        </Link>
+        </NavLink>
       </div>
     </div>
   );
