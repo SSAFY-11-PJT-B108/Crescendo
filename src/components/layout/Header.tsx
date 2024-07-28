@@ -14,7 +14,6 @@ export default function Header() {
       const activeLink = menuElement.querySelector('.active') as HTMLElement;
       if (activeLink) {
         const { offsetLeft, offsetWidth } = activeLink;
-        console.log(offsetLeft + ' ' + offsetWidth);
         setIndicatorStyle({
           left: offsetLeft + (offsetWidth - 80) / 2 + 'px', // Center the indicator
         });
