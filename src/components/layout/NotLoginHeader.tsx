@@ -3,7 +3,7 @@ import { ReactComponent as Login } from '../../assets/images/login.svg';
 import { ReactComponent as UserList } from '../../assets/images/userlist.svg';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
-export default function Header() {
+export default function NotLoginHeader() {
   const [indicatorStyle, setIndicatorStyle] = useState<React.CSSProperties>({});
   const menuRef = useRef<HTMLUListElement>(null);
   const location = useLocation();
@@ -44,13 +44,14 @@ export default function Header() {
       </ul>
 
       <div className="header_icon">
-        <NavLink to="/">
+        <Link to="/">
           <Login />
-        </NavLink>
-        <NavLink to="/">
+        </Link>
+        <Link to="/">
           <UserList />
-        </NavLink>
+        </Link>
       </div>
     </div>
   );
 }
+
