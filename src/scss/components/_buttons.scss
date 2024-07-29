@@ -1,1 +1,13 @@
 // 버튼관련 css
+.button{
+display: flex;
+width: 126px;
+height: 63px;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+background: #F66;
+box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+color: #FFFFFF;
+font-size: 24px;
+}
