@@ -31,7 +31,7 @@ export default function LoginHeader() {
 
       <ul className="header_menu" ref={menuRef}>
         <li>
-          <NavLink to="/">커뮤니티</NavLink>
+          <NavLink to="/community">커뮤니티</NavLink>
         </li>
         <li>
           <NavLink to="/dance">댄스챌린지</NavLink>
