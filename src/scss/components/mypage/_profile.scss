@@ -1,0 +1,112 @@
+.profile {
+  width: 90%;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  .img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: auto;
+    position: relative;
+
+    img {
+      width: 270px;
+      height: 270px;
+      box-sizing: border-box;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+    }
+    .editimg {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      display: flex;
+      width: 70px;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      color: #f66;
+      border-radius: 10px;
+      margin-top: 5px;
+      &:hover {
+        background-color: #ccc;
+        cursor: pointer;
+      }
+    }
+  }
+  &_edit {
+    width: 90%;
+    height: 30px;
+    background-color: #f66;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    &:hover {
+      background-color: #fea3a3;
+      cursor: pointer;
+    }
+  }
+
+  &_save {
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    button {
+      border-radius: 10px;
+    }
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .nickname {
+    margin: 0 auto;
+    width: 100%;
+    color: #f66;
+    border-radius: 10px;
+    background: #fff;
+    padding: 5px;
+    font-size: 32px;
+    &_edit {
+      margin: 0 auto;
+      width: 100%;
+      font-size: 20px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      color: #f66;
+    }
+  }
+  .content {
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: #fff;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: #f66;
+    font-size: 16px;
+    word-wrap: break-word; /* 긴 단어가 부모 요소의 경계를 넘어갈 때 줄 바꿈 */
+    word-break: break-all; /* 단어가 부모 요소의 경계를 넘어갈 때 줄 바꿈 */
+    white-space: normal; /* 기본 값으로, 텍스트가 공백에서 줄 바꿈 */
+    margin-bottom: auto;
+    &_edit {
+      border: 1px solid #ccc;
+    }
+  }
+}

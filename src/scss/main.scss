@@ -1,7 +1,54 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import 'components/buttons';
+
+@import 'components/common/buttons';
+@import 'components/header/usermenu';
+@import 'components/header/header';
+@import 'components/mypage/profile';
+@import 'components/mypage/friendlist';
+@import 'components/mypage/friendprofile';
+@import 'components/common/feed';
+@import 'components/common/search';
+@import 'components/common/gallery';
+@import 'components/common/gallerylist';
+@import 'components/common/dropdown';
+@import 'components/common/commonmodal';
+@import 'components/community/communitycard';
+@import 'components/community/communityfavoritelist';
+@import 'components/community/communitylist';
+@import 'components/favorite/bestphotoslide';
+@import 'components/favorite/favoriteranklist';
+@import 'components/favorite/favoriterankpostmodal';
+@import 'components/favorite/actionmenu';
+@import 'components/challenge//challengelist';
+
+@import 'components/chat/chatlayout';
+@import 'components/chat/chatroomlistitem';
+@import 'components/chat/chatroom';
+@import 'components/chat/message';
+@import 'components/signup/termsmodal';
+@import 'components/searchuser/searchuser';
+
+@import 'components/alarm/alarmlayout';
+@import 'components/challenge/challenge';
+@import 'components//challenge//challengeitem';
+@import 'components/challenge/holdmodal';
+@import 'components/challenge/challengedetail';
+@import 'components/challenge/challengedetailitem';
+@import 'components/challenge/detailmodal';
+
+@import 'components/main/section';
 @import 'base/font';
-@import 'layout/header';
+@import 'page/mypage';
+@import 'page/login';
+@import 'page/communitymain';
+@import 'page/communitydetail';
+@import 'page/favorite';
 @import 'layout/frame';
+@import 'components/community/postfeed';
+@import 'components/community/feeddetailmodal';
+@import 'components/community/dropdownmenu';
+@import 'components/community/dropdownreplymenu';
+@import 'page/passwordreset';
+@import 'page/settings';

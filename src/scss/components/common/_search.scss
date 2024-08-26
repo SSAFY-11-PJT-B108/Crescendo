@@ -1,0 +1,38 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  input {
+    width: 240px;
+    height: 30px;
+    border-radius: 10px;
+    background: #fff;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 10px;
+    outline: none;
+    color: #000;
+  }
+  span {
+    position: relative;
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 10px; /* 검색 아이콘의 위치 조정 */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+
+.community-search {
+  border: 2px solid #f66;
+}

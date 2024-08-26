@@ -1,0 +1,225 @@
+.feed {
+  width: 1000x;
+  border-bottom: 1px solid #f66;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+
+  &list {
+    margin-top: 20px;
+  }
+
+  .upper {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+
+    .userinfo {
+      width: 214px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dots_box {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      right: 0px;
+      top: 0px;
+    }
+
+    .community_name {
+      position: absolute;
+      right: 60px;
+      color: #bbb;
+      font-size: 24px;
+      height: fit-content;
+    }
+  }
+  .text {
+    width: 1260px;
+    color: #000;
+    font-size: 28px;
+  }
+  .tag {
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 1000px;
+  }
+
+  &_comment_box {
+    position: absolute;
+    right: 1px;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+  }
+  .hoverup:hover {
+    transform: scale(1.1);
+  }
+  &_heart_box {
+    position: absolute;
+    right: 80px;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  &_image_box {
+    .main_img_container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      display: inline-block;
+
+      .prev_img {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border: 5px solid #f66;
+        border-radius: 20px;
+        left: -100px;
+        bottom: 0px;
+        object-fit: cover;
+        z-index: 0;
+
+        &.slideLeft {
+          animation: slideLeftPrev 1s;
+        }
+      }
+
+      .next_img {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border: 5px solid #f66;
+        border-radius: 20px;
+        right: -100px;
+        bottom: 0px;
+        object-fit: cover;
+        z-index: 0;
+
+        &.slideRight {
+          animation: slideRightNext 1s;
+        }
+      }
+
+      .main_img {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        bottom: 0;
+        border: 5px solid #f66;
+        border-radius: 20px;
+        background-color: white;
+        object-fit: cover;
+        z-index: 1;
+
+        &.slideRight {
+          animation: slideRightMain 1s;
+        }
+
+        &.slideLeft {
+          animation: slideLeftMain 1s;
+        }
+      }
+
+      .image-counter {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: #f66;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 10px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 8px;
+        z-index: 2;
+      }
+    }
+
+    .pagination-dots {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 30px auto;
+
+      .pagination-dot {
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid #bbb;
+        cursor: pointer;
+
+        &.active {
+          background-color: #bbb;
+        }
+      }
+    }
+
+    .slider {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
+}
+
+@keyframes slideRightMain {
+  0% {
+    left: -100px;
+    width: 300px;
+    height: 300px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideLeftMain {
+  0% {
+    right: -100px;
+    width: 300px;
+    height: 300px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slideRightNext {
+  0% {
+    right: 0px;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@keyframes slideLeftPrev {
+  0% {
+    left: 0px;
+    width: 500px;
+    height: 500px;
+  }
+}

@@ -1,0 +1,96 @@
+.MyMessage {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+
+  .created {
+    font-size: 10px;
+    color: #fff;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 5px;
+    @media screen and (min-width: 1670px) {
+      font-size: 11px;
+    }
+  }
+  .message {
+    border-radius: 10px 10px 0px 10px;
+    background: #d7d7d7;
+    padding: 10px;
+    font-size: 14px;
+    color: #000;
+    max-width: 50%;
+    margin-right: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    @media screen and (min-width: 1670px) {
+      font-size: 15px;
+    }
+  }
+}
+
+.OtherMessage {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  .created {
+    font-size: 10px;
+    color: #fff;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 5px;
+    @media screen and (min-width: 1670px) {
+      font-size: 11px;
+    }
+  }
+  .message {
+    border-radius: 10px 10px 10px 0px;
+    background: #fff;
+    padding: 10px;
+    font-size: 14px;
+    color: #000;
+    max-width: 50%;
+    margin-left: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    @media screen and (min-width: 1670px) {
+      font-size: 15px;
+    }
+  }
+}
+
+.send-container {
+  display: flex;
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 20px;
+
+  input {
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    position: relative;
+    padding: 10px;
+    padding-right: 80px;
+    outline: none;
+    color: #000;
+    font-size: 13px;
+    @media screen and (min-width: 1670px) {
+      font-size: 15px;
+    }
+  }
+  span {
+    position: relative;
+  }
+
+  .send-icon {
+    position: absolute;
+    right: 10px; /* 검색 아이콘의 위치 조정 */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}

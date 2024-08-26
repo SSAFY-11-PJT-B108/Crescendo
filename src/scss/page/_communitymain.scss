@@ -1,0 +1,24 @@
+.communitymain {
+  margin: 20px auto;
+  color: #f66;
+
+  &_contents {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+  }
+
+  &_title {
+    text-align: left;
+    font-size: 45pt;
+  }
+
+  &_searchbar {
+    display: flex;
+    margin-left: 20px;
+
+    input {
+      border: 2px solid #f66;
+    }
+  }
+}

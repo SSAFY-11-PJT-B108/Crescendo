@@ -1,0 +1,140 @@
+.settings-container {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ff6666;
+  padding: 20px;
+
+  .settings-title {
+    color: #000;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 5.68px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 3px solid #ff6666;
+  }
+
+  .password-reset-wrapper {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 700px;
+
+    .form-group {
+      margin-bottom: 5px;
+      position: relative;
+      width: 100%;
+      max-width: 750px;
+
+      .input-group {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        input {
+          border: none;
+          border-bottom: 3px solid #f66;
+          padding: 0.2rem 0;
+          padding-left: 17px;
+          padding-right: 17px;
+          font-size: 19px;
+          letter-spacing: 2.84px;
+          width: 100%;
+          &::placeholder {
+            color: #bbbbbb;
+          }
+          &:focus {
+            outline: none;
+            border-bottom-color: #ff6666;
+          }
+        }
+
+        .toggle-password {
+          width: 20px;
+          height: 20px;
+          margin-left: -30px;
+          cursor: pointer;
+          font-size: 1rem;
+          color: #ff6666;
+        }
+      }
+
+      .error-message {
+        color: #e53e3e;
+        font-size: 15px;
+        height: 1.5em; /* 고정된 높이 설정 */
+        visibility: hidden;
+      }
+
+      .error-message.visible {
+        visibility: visible;
+      }
+    }
+  }
+
+  .button-group {
+    display: flex;
+    margin-bottom: 0;
+
+    .submit-button {
+      width: 116px;
+      height: 53px;
+      background: #f66;
+      box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 100%; /* 24px */
+      letter-spacing: 3.84px;
+      padding: 0.75rem;
+      cursor: pointer;
+      &:hover {
+        background-color: #e05a5a;
+      }
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+
+    .delete-button {
+      width: 116px;
+      height: 53px;
+      background: #f66;
+      box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 100%; /* 24px */
+      letter-spacing: 3.84px;
+      padding: 0.75rem;
+      cursor: pointer;
+      &:hover {
+        background-color: #e05a5a;
+      }
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .deletion-warning-msg {
+    font-size: 20px;
+    margin-left: 20px;
+    color: #ff0303;
+  }
+}

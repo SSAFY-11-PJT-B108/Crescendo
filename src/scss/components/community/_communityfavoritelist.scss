@@ -1,0 +1,15 @@
+.communityfavoritelist {
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
+    margin: 20px auto;
+  }
+
+  &_contents {
+    display: flex;
+    width: 1200px;
+    padding: 20px;
+  }
+}

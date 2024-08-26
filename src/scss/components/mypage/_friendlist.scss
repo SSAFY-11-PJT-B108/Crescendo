@@ -1,0 +1,73 @@
+.friend {
+  margin: 0 auto;
+  width: 70%;
+  height: 30px;
+  margin-top: 10px;
+
+  .listbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .follow {
+    width: 50%;
+    height: 30px;
+    color: #f66;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+  }
+
+  .active {
+    color: #fff;
+    border-radius: 10px 0px 0px 0px;
+    background: #f66;
+    cursor: pointer;
+  }
+  .left {
+    border-radius: 10px 0px 0px 0px;
+  }
+  .right {
+    border-radius: 0px 10px 0px 0px;
+  }
+}
+
+.list {
+  width: 90%;
+  border-radius: 20px;
+  background: #f66;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.profilelist {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 15px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: scroll;
+}
+
+.profilelist::-webkit-scrollbar {
+  width: 11px; /* 스크롤바의 너비 */
+}
+
+.profilelist::-webkit-scrollbar-thumb {
+  background-color: #fff; /* 스크롤바의 색상 */
+  border-radius: 6px; /* 스크롤바의 모서리 둥글게 */
+  border: 3px solid #f66; /* 스크롤바와 컨테이너 사이의 여백 */
+}
+
+.profilelist::-webkit-scrollbar-track {
+  background-color: #f66; /* 스크롤바 배경 색상 */
+  border-radius: 6px; /* 스크롤바 배경의 모서리 둥글게 */
+}

@@ -1,0 +1,158 @@
+.challengedetail {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 4.8px;
+    color: #f66;
+  }
+  .left-box {
+    width: calc(100% / 3) * 1;
+    height: 600px;
+    position: relative;
+  }
+  .left {
+    width: calc(100% / 3) * 1;
+    height: 600px;
+    position: fixed;
+    top: 50px;
+    left: 100px;
+  }
+  .right {
+    width: calc(100% / 3) * 2;
+    height: 600px;
+  }
+
+  .video-container {
+    position: absolute;
+    width: 90%;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .video-player {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 30px;
+    box-shadow: 0px 5px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .controls {
+    width: 90%;
+    position: absolute;
+    bottom: 3px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .play-pause-button {
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .progress-bar {
+    width: calc(100% / 3) * 2;
+    accent-color: #f66;
+    &:active {
+      cursor: grabbing;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .big-play-pause-button {
+    position: absolute;
+    top: 50%; /* 부모 요소의 상단에서 50% 위치 */
+    left: 50%; /* 부모 요소의 왼쪽에서 50% 위치 */
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 3s ease; /* 애니메이션을 적용 */
+    z-index: 2;
+  }
+
+  .original {
+    width: 405px;
+    height: 600px;
+    position: fixed;
+    top: 100px;
+    left: 110px;
+  }
+  .detail-btn {
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 15px;
+    top: 690px;
+    left: 400px;
+    background-color: #f66;
+    color: #fff;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+  .detail-score {
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 15px;
+    top: 690px;
+    left: 520px;
+    background-color: #f66;
+    color: #fff;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+  .challenger {
+    width: 405px;
+    height: 600px;
+    position: fixed;
+    top: 100px;
+    left: 510px;
+    border-left: 3px solid #f66;
+
+    .no-video {
+      width: 90%;
+      height: 580px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+      box-shadow: 0px 5px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  .challenge-room {
+    width: 430px;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+  }
+}

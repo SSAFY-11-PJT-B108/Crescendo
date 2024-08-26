@@ -1,0 +1,22 @@
+.action-menu {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 100px;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+  .action-menu-item {
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.favorite {
+  .bestphotos {
+    &_container {
+      background-color: #ff9c9c;
+      height: 600px;
+      box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+    margin: auto;
+  }
+
+  &_title {
+    color: #f66;
+    font-size: 50px;
+    margin-top: 50px;
+  }
+
+  .conditionbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    .text {
+      color: #bbbbbb;
+      font-size: 24px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+    .filter {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  //작성 모달 관련
+  .write-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    cursor: pointer;
+  }
+}
