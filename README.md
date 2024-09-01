@@ -47,7 +47,7 @@ $ npm start
 
 - 비교 재생 <br/>
   ![비교재생](https://github.com/user-attachments/assets/5c3cdce3-048b-44fd-8529-1ca342c25b96)
-- 내 챌린지 등록
+- 내 챌린지 등록 <br/>
   ![챌린지디테일등록](https://github.com/user-attachments/assets/c24638bd-8a83-47c5-893a-3290777a4a04)
 
 ### 최애 자랑
