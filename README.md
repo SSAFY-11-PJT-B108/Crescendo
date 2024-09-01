@@ -20,6 +20,8 @@ $ npm start
 
 ### 배포링크 ~~https://www.crescendo.o-r.kr/~~
 (현재는 내려갔습니다!)
+## ✅ 프로젝트 구조
+![그림3](https://github.com/user-attachments/assets/a6740fc0-989f-4a45-926b-ec94629760a5)
 
 
 ## ✅ 기능
@@ -28,12 +30,28 @@ $ npm start
 ![메인페이지](https://github.com/user-attachments/assets/c67c6baf-c703-4f7e-97bc-3e76ef9d4fdd)
 
 ### 아이돌 커뮤니티
-
-### 아이돌 커뮤니티 상세(피드/팬아트/굿즈)
+- 아이돌 목록 <br/>
+  ![커뮤니티1](https://github.com/user-attachments/assets/ec5aa165-e222-4ca6-8158-ecd5f9d26f51)
+- 아이돌 커뮤니티 피드 <br/>
+  ![커뮤니티2](https://github.com/user-attachments/assets/1ed157d3-7eb6-4594-9210-9aa9204d499f)
+- 아이돌 커뮤니티 상세 댓글 <br/>
+  ![커뮤니티3](https://github.com/user-attachments/assets/477f4aff-77a5-46ef-9739-55841b525a2a)
 
 ### 댄스 챌린지
+- 댄스 챌린지 등록 <br/>
+  ![챌린지등록](https://github.com/user-attachments/assets/04e6d234-a6f7-4bd3-8cb0-7f4f4b7a8d6e)
+
+### 댄스 챌린지 상세
+- 다른 사람 챌린지 보기 <br/>
+  ![재생](https://github.com/user-attachments/assets/a8b71dc8-723f-4aee-9353-53fe1e49b151)
+
+- 비교 재생 <br/>
+  ![비교재생](https://github.com/user-attachments/assets/5c3cdce3-048b-44fd-8529-1ca342c25b96)
+- 내 챌린지 등록
+  ![챌린지디테일등록](https://github.com/user-attachments/assets/c24638bd-8a83-47c5-893a-3290777a4a04)
 
 ### 최애 자랑
+![최애자랑](https://github.com/user-attachments/assets/6cce2c18-ab4a-4023-bed5-150a6d0696b1)
 
 ## ✅ 개발규칙
 - Prettier, Eslint, Husky
@@ -67,4 +85,6 @@ $ npm start
 |   style   | 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우, 짜잘한 코드 수정 |
 | refactor  |                            코드 리팩토링                            |
 |   merge   |                             코드 합치기                             |
+
+## ✅ 
 
