@@ -3,6 +3,14 @@
 ## ✅프로젝트 목적
 
 기존의 아이돌 덕질 커뮤니티는 폐쇄적인 면이 있고, 아는 사람들만 정보공유를 하기 때문에 정보습득에 있어서 제한적이다. 그래서 아이돌 덕질에 흥미를 가지고 입문하는 사람들이 다른사람들의 반응을 얻지 못해 쉽게 떠나갈수 있다는 문제점이 있다. 이러한 점을 타파하고자 누구나 쉽게 접근하고 팬이 직접 참여하는 컨텐츠를 제공해 떠나가지 않고, 덕질에 흥미를 더 유발할 수 있다.
+
+## ✅팀원
+
+| 🍀 [권성민](https://github.com/kwonja) | 🍀 [이정현](https://github.com/IcedCafeMocha) | 🍀 [김진현](https://github.com/Jinhyeon-Kim-6619) |  🍀 [김강산](https://github.com/Sanizzang) | 🍀 [김인제](https://github.com/kijen723) | 🍀 [하상진](https://github.com/lavegas1) |
+| :-----------------------------------: | :-----------------------------------: | :-----------------------------------: | :-----------------------------------: | :-----------------------------------: | :-----------------------------------: |
+| FE리더 | UI/UX | UI/UX | BE리더 | BE/팀장 | BE |
+| <img src="https://avatars.githubusercontent.com/kwonja" alt="권성민" width="100" /> | <img src="https://avatars.githubusercontent.com/IcedCafeMocha" alt="이정현" width="100" /> |  <img src="https://avatars.githubusercontent.com/Jinhyeon-Kim-6619" alt="김진현" width="100" /> | <img src="https://avatars.githubusercontent.com/Sanizzang" alt="김강산" width="100" /> | <img src="https://avatars.githubusercontent.com/kijen723" alt="김인제" width="100" /> | <img src="https://avatars.githubusercontent.com/lavegas1" alt="하상" width="100" /> |
+
 ## ✅ UCC
 
 https://www.youtube.com/watch?v=yUcUPUZBgss
@@ -57,7 +65,7 @@ $ npm start
 - Prettier, Eslint, Husky
 
 ## ✅ CI/CD 자동화
-- CI : gitlab, Jenkins
+- CI : Gitlab, Jenkins
 - CD : AWS EC2 Ubuntu 20.04.6 LTS 
 ## ✅ 사용기술
 
@@ -85,6 +93,4 @@ $ npm start
 |   style   | 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우, 짜잘한 코드 수정 |
 | refactor  |                            코드 리팩토링                            |
 |   merge   |                             코드 합치기                             |
-
-## ✅ 
 
