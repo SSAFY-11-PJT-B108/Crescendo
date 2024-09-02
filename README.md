@@ -94,7 +94,7 @@ $ npm start
 | refactor  |                            코드 리팩토링                            |
 |   merge   |                             코드 합치기                             |
 
-## ✅ 회고
+## ✅ 기술선택 배경 및 회고
 - 성민 <br/>
   https://pepper-carrot-8b0.notion.site/11b29ce29a274d438d16a1ba93d08605
 
