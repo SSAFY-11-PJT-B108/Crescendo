@@ -70,7 +70,7 @@ $ npm start
 ## ✅ 사용기술
 
 - React TypeScript
-- Sass, Tailwind CSS
+- Scss, Tailwind CSS
 - axios
 - react-router-dom
 - reduxjs/toolkit / react-redux
