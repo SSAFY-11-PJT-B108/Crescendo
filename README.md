@@ -77,6 +77,7 @@ $ npm start
 - Context API
 - Stomp.js
 - react-toastify
+- MediaPiple
 
 ## ✅ 코딩 컨벤션
 
